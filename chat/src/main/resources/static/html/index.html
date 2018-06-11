@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var url="/getIpAddr";
+            $.post(url,null,function (data) {
+                $("#ipAddr").html(data);
+            });
+        });
+    </script>
+</head>
+<body>
+       <span id="ipAddr"></span>
+</body>
+</html>
